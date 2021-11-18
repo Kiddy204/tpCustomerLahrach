@@ -4,10 +4,15 @@
  */
 package ma.lahrach.lahrachcustomerapp.config;
 
+import javax.enterprise.context.ApplicationScoped;
+import javax.faces.annotation.FacesConfig;
+
 /**
  *
  * @author lial
  */
+@ApplicationScoped
+@FacesConfig
 public class configJSF {
     
 }
