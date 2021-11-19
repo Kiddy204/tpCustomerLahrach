@@ -27,6 +27,7 @@ import javax.validation.constraints.Size;
 @NamedQueries({
     @NamedQuery(name = "MicroMarket.findAll", query = "SELECT m FROM MicroMarket m"),
     @NamedQuery(name = "MicroMarket.findByZipCode", query = "SELECT m FROM MicroMarket m WHERE m.zipCode = :zipCode"),
+    @NamedQuery(name = "MicroMarket.findZipCodes", query = "SELECT DISTINCT m.zipCode FROM MicroMarket m"),
     @NamedQuery(name = "MicroMarket.findByRadius", query = "SELECT m FROM MicroMarket m WHERE m.radius = :radius"),
     @NamedQuery(name = "MicroMarket.findByAreaLength", query = "SELECT m FROM MicroMarket m WHERE m.areaLength = :areaLength"),
     @NamedQuery(name = "MicroMarket.findByAreaWidth", query = "SELECT m FROM MicroMarket m WHERE m.areaWidth = :areaWidth")})
